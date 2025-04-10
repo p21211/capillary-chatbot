@@ -14,10 +14,66 @@ A powerful chatbot built to interact with [CapillaryTech Docs](https://docs.capi
 - 🖥️ Runs a sleek chatbot UI using Streamlit
 
 ---
+# 📘 CapillaryTech Documentation Chatbot
+
+This project is an intelligent chatbot that allows you to query CapillaryTech's official documentation using natural language. It scrapes the documentation, preprocesses and indexes the content using embeddings, and lets you ask questions through a Streamlit-based interface.
+
+---
+
+
+## 🧰 Tech Stack
+
+- Python 🐍
+- LangChain
+- FAISS (Facebook AI Similarity Search)
+- HuggingFace Transformers & Embeddings
+- Streamlit (UI)
+- BeautifulSoup (for web scraping)
+
+---
+
+## 📦 Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/capillarytech-chatbot.git
+cd capillarytech-chatbot
+
+**### Install Dependencies**
+pip install -r requirements.txt
+```bash
+pip install faiss-cpu langchain sentence-transformers numpy
+
+
+### ⚙️ Run the Project
+1. Scrape the Docs 
+python scraper.py
+
+2. Preprocess and Build Vector Store
+python preprocessor.py
+
+3. Launch the Streamlit App
+streamlit run app.py
+
 
 ## 🗂️ Project Structure
 
+.
+├── app.py                # Main Streamlit UI
+├── scraper.py            # Scraper for documentation
+├── preprocessor.py       # Cleans and vectorizes docs
+├── vectorstore.py        # FAISS vectorstore builder
+├── secretkey.py          # HuggingFace API key (keep this secret)
+├── data/
+│   └── docs_raw/         # Raw scraped text files
+├── capillary_faiss_index/ # Vector store directory
+└── README.md             # This file
 
+
+
+🧑‍💻 Author
+Made with ❤️ by Priyankaa Sarkar
 
 # 🧠 FAISS-based Vector Store Builder
 
@@ -37,9 +93,6 @@ This project provides a streamlined Python script to create a vector store using
 
 ---
 
-## 🔧 Requirements
 
-Install dependencies with:
 
-```bash
-pip install faiss-cpu langchain sentence-transformers numpy
+
