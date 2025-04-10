@@ -25,7 +25,7 @@ This project is an intelligent chatbot that allows you to query CapillaryTech's 
 
 - Python   
 - LangChain  
-- FAISS (Facebook AI Similarity Search)  
+- FAISS  
 - HuggingFace Transformers & Embeddings  
 - Streamlit (UI)  
 - BeautifulSoup (for web scraping)  
@@ -85,7 +85,7 @@ streamlit run app.py
 ├── scraper.py             # Scraper for documentation
 ├── preprocessor.py        # Cleans and vectorizes docs
 ├── vectorstore.py         # FAISS vectorstore builder
-├── secretkey.py           # HuggingFace API key (keep this secret)
+├── secretkey.py           # HuggingFace API key 
 ├── data/
 │   └── docs_raw/          # Raw scraped text files
 ├── capillary_faiss_index/ # Vector store directory
